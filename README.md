@@ -1,5 +1,7 @@
 # github-sandbox
 
+Lorem ipsum
+
 > Finally some **permalinks** to test GitHub extensions
 
 When to use this repo:
