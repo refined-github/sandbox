@@ -22,7 +22,7 @@ Rules:
   
   # Test URLs
   
-  https://github.com/fregante/github-sandbox/issues/345
+  https://github.com/fregante/github-sandbox/issues/3456
   ```
 3. That's it! The issue you created will be here forever, hence the _permalink_ subtitle.
 
