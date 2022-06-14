@@ -12,7 +12,7 @@ Rules:
 - Once you create, close, delete a file… copy its link and then don't touch it again
 - No specific rules about names, titles, etc… use and write what you need
 
-## Usage example 🥲 
+## Usage example ☺️ 
 
 1. I open an issue named `Testing in-title #1 issue references`
 3. I use its URL in a PR, like:
