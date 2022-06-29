@@ -28,6 +28,7 @@ Rules:
 ### Live example
 
 
-I created several issues and PRs and used it in this demo page: https://github.com/fregante/github-issue-link-status/issues/57
+I created several iss
+ues and PRs and used it in this demo page: https://github.com/fregante/github-issue-link-status/issues/57
 
 Feel free to reuse the same links when testing, they're guaranteed to never change (they won't be closed, merged, etc)
