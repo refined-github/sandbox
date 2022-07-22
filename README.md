@@ -9,6 +9,7 @@ When to use this repo:
 Rules:
 
 - Do not touch pre-existing files, issues, PRs
+- 
 - Once you create, close, delete a file… copy its link and then don't touch it again
 - No specific rules about names, titles, etc… use and write what you need
 
@@ -21,7 +22,7 @@ Rules:
   
   # Test URLs
   
-  https://github.com/fregante/github-sandbox/issues/345
+  https://github.com/fregante/github-sandbox/issues/3456
   ```
 3. That's it! The issue you created will be here forever, hence the _permalink_ subtitle.
 
