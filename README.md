@@ -1,4 +1,4 @@
-# github-sandbox test
+# github-sandbox
 
 > Finally some **permalinks** to test GitHub extensions
 
