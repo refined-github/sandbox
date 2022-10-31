@@ -1,5 +1,4 @@
 name: wait-for-checks
-
 on:
   push:
     branches:
