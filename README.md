@@ -6,7 +6,7 @@ When to use this repo:
 
 - When you want to create a test case for Refined GitHub
 
-Rules:
+Rules
 
 - Do not touch pre-existing files, issues, PRs
 - Once you create, close, delete a file… copy its link and then don't touch it again
