@@ -4,7 +4,7 @@
 
 When to use this repo:
 
-- When you want to create a test case for Refined GitHub
+- When you want to create a test case for [Refined GitHub](https://github.com/refined-github/refined-github)
 
 Rules:
 
@@ -21,7 +21,7 @@ Rules:
   
   # Test URLs
   
-  https://github.com/fregante/github-sandbox/issues/345
+  https://github.com/refined-github/sandbox/issues/345
   ```
 3. That's it! The issue you created will be here forever, hence the _permalink_ subtitle.
 
