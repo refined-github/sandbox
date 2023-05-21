@@ -2,7 +2,6 @@
 
 > Finally some **permalinks** to test GitHub extensions
 
-altered 
 When to use this repo:
 
 - When you want to create a test case for Refined GitHub
