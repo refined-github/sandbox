@@ -22,8 +22,8 @@ jobs:
 
       - name: Was it hotfixed?
         run: |
-          grep -e ",6350," broken-features.csv
-          if grep -q ",6350," broken-features.csv; then
+          grep -e ",650," broken-features.csv
+          if grep -q ",650," broken-features.csv; then
             TODAY=$(npx utc-version --short)
             echo "WAS_HOTFIXED=$TODAY" >> $GITHUB_ENV
             echo "WAS_HOTFIXED=$TODAY"
