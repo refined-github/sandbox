@@ -1,5 +1,6 @@
 on:
   workflow_dispatch:
+  push:
 
 
 jobs:
@@ -22,7 +23,7 @@ jobs:
       - name: Was it hotfixed?
         run: |
           grep -e ",6350," broken-features.csv
-          if [ grep -e ",6350," broken-features.csv ]; then
+          if grep -q ",6350," broken-features.csv; then
             TODAY=$(npx utc-version --short)
             echo "WAS_HOTFIXED=$TODAY" >> $GITHUB_ENV
             echo "WAS_HOTFIXED=$TODAY"
