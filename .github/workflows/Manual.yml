@@ -1,6 +1,5 @@
 on:
   workflow_dispatch:
-  push:
 
 
 jobs:
@@ -10,29 +9,3 @@ jobs:
     - uses: actions/checkout@v3
 
     - run: sleep 10
-  reminder:
-    name: Reminder
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Fetch CSV file
-        run: |
-          curl -o broken-features.csv https://raw.githubusercontent.com/refined-github/yolo/main/broken-features.csv
-          cat broken-features.csv
-
-      - name: Was it hotfixed?
-        run: |
-          grep -e ",650," broken-features.csv
-          if grep -q ",650," broken-features.csv; then
-            TODAY=$(npx utc-version --short)
-            echo "WAS_HOTFIXED=$TODAY" >> $GITHUB_ENV
-            echo "WAS_HOTFIXED=$TODAY"
-          fi
-
-      - name: Comment on Issue Closure
-        if: env.WAS_HOTFIXED
-        uses: peter-evans/create-or-update-comment@v1
-        with:
-          issue-number: 3
-          body: |
-            This issue has been fixed and will appear in the next version. Ensure that the hotfix is disabled there. Add `${{env.WAS_HOTFIXED}}` to refined-github/yolo/edit/main/broken-features.csv
