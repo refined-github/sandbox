@@ -22,19 +22,17 @@ jobs:
 
       - name: Was it hotfixed?
         run: |
-          grep -e ",650," broken-features.csv
-          if grep -q ",650," broken-features.csv; then
+          grep -e ",6350," broken-features.csv
+          if grep -q ",6350," broken-features.csv; then
             TODAY=$(npx utc-version --short)
             echo "WAS_HOTFIXED=$TODAY" >> $GITHUB_ENV
             echo "WAS_HOTFIXED=$TODAY"
           fi
-          
-          echo "WAS_HOTFIXED=$TODAY" >> $GITHUB_ENV
 
       - name: Comment on Issue Closure
         if: env.WAS_HOTFIXED
         uses: peter-evans/create-or-update-comment@v1
         with:
-          issue-number: 6350
+          issue-number: 3
           body: |
             This issue has been fixed and will appear in the next version. Ensure that the hotfix is disabled there. Add ${{env.WAS_HOTFIXED}} to refined-github/yolo/edit/main/broken-features.csv
