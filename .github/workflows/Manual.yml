@@ -17,13 +17,18 @@ jobs:
       - name: Fetch CSV file
         run: |
           curl -o broken-features.csv https://raw.githubusercontent.com/refined-github/yolo/main/broken-features.csv
+          cat broken-features.csv
 
       - name: Was it hotfixed?
         run: |
+          grep -e ",6350," broken-features.csv
           if [ grep -e ",6350," broken-features.csv ]; then
             TODAY=$(npx utc-version --short)
-            echo "WAS_HOTFIXED=true" >> $GITHUB_ENV
+            echo "WAS_HOTFIXED=$TODAY" >> $GITHUB_ENV
+            echo "WAS_HOTFIXED=$TODAY"
           fi
+          
+          echo "WAS_HOTFIXED=$TODAY" >> $GITHUB_ENV
 
       - name: Comment on Issue Closure
         if: env.WAS_HOTFIXED
