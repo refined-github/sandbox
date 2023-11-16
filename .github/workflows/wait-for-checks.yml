@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - wait-for-checks
+      - wait-for-checks-NOPE
 
 jobs:
   sleep:
