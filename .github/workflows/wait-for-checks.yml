@@ -1,5 +1,6 @@
 name: wait-for-checks
 on:
+  workflow_dispatch:
   push:
     branches:
       - wait-for-checks
