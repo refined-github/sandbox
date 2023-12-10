@@ -17,7 +17,10 @@ Rules:
 1. I open an issue named `Testing in-title #1 issue references`
 3. I use its URL in a PR, like:
   ```md
-  I created this feature that works on titles. 
+	 
+	 	 
+ 	 function() {} 	
+function	 ()	{}
   
   # Test URLs
   
