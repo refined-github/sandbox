@@ -1,4 +1,4 @@
-import React from 'dom-chef';
+test
 import {CachedFunction} from 'webext-storage-cache';
 import TagIcon from 'octicons-plain-react/Tag';
 import elementReady from 'element-ready';
