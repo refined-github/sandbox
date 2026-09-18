@@ -4,6 +4,9 @@ https://github.com/refined-github/refined-github/pull/7985
 JS:
 issues: // #12, GH-34, fregante#1 and facebook/react#5678
 url: // https://github.com/?q=refined-github
+issue: // https://github.com/refined-github/refined-github/issues/6433
+pr: // https://github.com/refined-github/refined-github/pull/9053
+commit: // https://github.com/refined-github/refined-github/commit/d63e2d97fc4d85f986a120fb49cd8e09f6785b93
 ```
 
 ```
